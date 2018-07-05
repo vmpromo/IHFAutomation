@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{67F881F8-B020-4BEA-8D6D-0FC1A4036229}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IHF.Security.UserManagement</RootNamespace>
+    <AssemblyName>IHF.Security.UserManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>/IHFAutomation%3fPVCS Version Manager%3fS:\ihfautomation%3f</SccProjectName>
+    <SccLocalPath>..</SccLocalPath>
+    <SccAuxPath />
+    <SccProvider>MSSCCI:ChangeMan Version Manager</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IHFRoleProvider.cs" />
+    <Compile Include="Definitions.cs" />
+    <Compile Include="IHFMembershipProvider.cs" />
+    <Compile Include="IHFSitemapProvider.cs" />
+    <Compile Include="IHFUserAccessHttpModule.cs" />
+    <Compile Include="MembershipDAO.cs" />
+    <Compile Include="IHFNavigationHttpModule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoleDAO.cs" />
+    <Compile Include="SiteMapDAO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessClasses\IHF.BusinessLayer.BusinessClasses.csproj">
+      <Project>{E49C2506-12E7-4CB8-BF4C-EA9D28DC8A51}</Project>
+      <Name>IHF.BusinessLayer.BusinessClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessObjects\IHF.BusinessLayer.DataAccessObjects.csproj">
+      <Project>{C316DD9A-9A8F-4EC7-9B59-CD398EFBAE72}</Project>
+      <Name>IHF.BusinessLayer.DataAccessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataManager\IHF.EnterpriseLibrary.Data.csproj">
+      <Project>{1AA0D19A-1DE8-4582-85BD-8EF883FC8845}</Project>
+      <Name>IHF.EnterpriseLibrary.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataServices\IHF.EnterpriseLibrary.DataServices.csproj">
+      <Project>{BC03F4E9-AF7C-40A8-90B1-04D86F838135}</Project>
+      <Name>IHF.EnterpriseLibrary.DataServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Util\IHF.BusinessLayer.Util.csproj">
+      <Project>{AA9D1B05-C633-47A1-ACE1-4028E2B51CA7}</Project>
+      <Name>IHF.BusinessLayer.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,7 @@
+﻿<FeatureToggle>
+  <PageToggles>
+    <Page Url="putaway.aspx" RuleEnabled="true">
+      <EnableForUsers>IHFITS</EnableForUsers>
+    </Page>
+  </PageToggles>
+</FeatureToggle>

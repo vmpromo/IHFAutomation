@@ -1,0 +1,5 @@
+C:\projects\ihfautomation\ErrorHandling\bin\Debug\IHF.EnterpriseLibrary.ErrorHandling.dll
+C:\projects\ihfautomation\ErrorHandling\bin\Debug\IHF.EnterpriseLibrary.ErrorHandling.pdb
+C:\projects\ihfautomation\ErrorHandling\obj\Debug\ResolveAssemblyReference.cache
+C:\projects\ihfautomation\ErrorHandling\obj\Debug\IHF.EnterpriseLibrary.ErrorHandling.dll
+C:\projects\ihfautomation\ErrorHandling\obj\Debug\IHF.EnterpriseLibrary.ErrorHandling.pdb

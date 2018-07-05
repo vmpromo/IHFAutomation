@@ -1,0 +1,5 @@
+c:\projects\ihfautomation\IHFAutomation\DataServices\bin\Debug\IHF.EnterpriseLibrary.DataServices.dll
+c:\projects\ihfautomation\IHFAutomation\DataServices\bin\Debug\IHF.EnterpriseLibrary.DataServices.pdb
+c:\projects\ihfautomation\IHFAutomation\DataServices\obj\Debug\ResolveAssemblyReference.cache
+c:\projects\ihfautomation\IHFAutomation\DataServices\obj\Debug\IHF.EnterpriseLibrary.DataServices.dll
+c:\projects\ihfautomation\IHFAutomation\DataServices\obj\Debug\IHF.EnterpriseLibrary.DataServices.pdb

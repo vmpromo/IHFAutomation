@@ -1,0 +1,947 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3717B51B-8E32-4FE2-B876-5C97B99F385A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IHF.ApplicationLayer.Web</RootNamespace>
+    <AssemblyName>IHF.ApplicationLayer.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <SccProjectName>/IHFAutomation%3fPVCS Version Manager%3fS:\ihfautomation%3f</SccProjectName>
+    <SccLocalPath>..</SccLocalPath>
+    <SccAuxPath />
+    <SccProvider>MSSCCI:ChangeMan Version Manager</SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.40412.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Microsoft Enterprise Library 5.0\Bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Microsoft Enterprise Library 5.0\Bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activation" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.Web.UI, Version=2011.1.413.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ThirdPartyLibraries\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\appSetting.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\featureToggle.xml" />
+    <Content Include="Handheld\Despatch.aspx" />
+    <Content Include="Handheld\InductSelectLoad.aspx" />
+    <Content Include="Handheld\LocateManualAreaChute.aspx" />
+    <Content Include="Handheld\MoveTote.aspx" />
+    <Content Include="Handheld\Putaway.aspx" />
+    <Content Include="Handheld\RemoveCage.aspx" />
+    <Content Include="Handheld\RemoveForPack.aspx" />
+    <Content Include="Handheld\RemoveForPackClearup.aspx" />
+    <Content Include="Handheld\ScanToVan.aspx" />
+    <Content Include="Handheld\SelectArea.aspx" />
+    <Content Include="Images\Air.jpg" />
+    <Content Include="Images\Both.jpg" />
+    <Content Include="Images\calendar.gif" />
+    <Content Include="Images\cancel.gif" />
+    <Content Include="Images\clickcollectsmall.jpg" />
+    <Content Include="Images\close.gif" />
+    <Content Include="Images\divider.gif" />
+    <Content Include="Images\drop1.gif" />
+    <Content Include="Images\drop2.gif" />
+    <Content Include="Images\green.GIF" />
+    <Content Include="Images\left1.gif" />
+    <Content Include="Images\left2.gif" />
+    <Content Include="Images\ok.gif" />
+    <Content Include="Images\progress.gif" />
+    <Content Include="Images\red.GIF" />
+    <Content Include="Images\right1.gif" />
+    <Content Include="Images\right2.gif" />
+    <Content Include="Images\Road.jpg" />
+    <Content Include="Images\up2.gif" />
+    <Content Include="Images\wait.gif" />
+    <Content Include="Images\yellow.gif" />
+    <Content Include="JsTests\authDialog.tests.js" />
+    <Content Include="JsTests\returns.tests.js" />
+    <Content Include="karma.conf.js" />
+    <Content Include="Pages\Admin\Setup\StoreDelivGrpSetup.aspx" />
+    <Content Include="Pages\Dashboard\ClickCollectLateEmail.aspx" />
+    <Content Include="Pages\Admin\LoadRelease.aspx" />
+    <Content Include="Pages\Admin\Setup\AreaSetup.aspx" />
+    <Content Include="Pages\Admin\Setup\ChutesInArea.aspx" />
+    <Content Include="Pages\Admin\Setup\FailedToteSetup.aspx" />
+    <Content Include="Pages\Admin\Setup\SkuLabelForTest.aspx" />
+    <Content Include="Pages\Admin\Setup\SystemParams.aspx" />
+    <Content Include="Pages\Dashboard\Cancellation\OrderInquiry.aspx" />
+    <Content Include="Pages\Dashboard\AlertDetails.aspx" />
+    <Content Include="Pages\Dashboard\AlertsWebPart.ascx" />
+    <Content Include="Pages\Dashboard\CagesToBeDespatched.aspx" />
+    <Content Include="Pages\Dashboard\ClearTote.aspx" />
+    <Content Include="Pages\Dashboard\IHFHome.aspx" />
+    <Content Include="Pages\Dashboard\ItemsCompletedUser.aspx" />
+    <Content Include="Pages\Dashboard\ItemsPacked.aspx" />
+    <Content Include="Pages\Dashboard\LoadDetail.aspx" />
+    <Content Include="Pages\Dashboard\LoadOverview.aspx" />
+    <Content Include="Pages\Dashboard\LoadReleaseStats.aspx" />
+    <Content Include="Pages\Dashboard\OperationalOverview.aspx" />
+    <Content Include="Pages\Dashboard\OrdersByHour.aspx" />
+    <Content Include="Pages\Dashboard\PackedToBeCaged.aspx" />
+    <Content Include="Pages\Dashboard\PackPriority.aspx" />
+    <Content Include="Pages\Dashboard\PackPriorityValue.aspx" />
+    <Content Include="Pages\Dashboard\ServicedGroupCounts.ascx" />
+    <Content Include="Pages\Dashboard\ServiceNameCounts.ascx" />
+    <Content Include="Pages\Dashboard\SkuSearch.aspx" />
+    <Content Include="Pages\Dashboard\StoreManifest.aspx" />
+    <Content Include="Pages\Dashboard\TrolleyDetail.aspx" />
+    <Content Include="Pages\Dashboard\TrolleyOverview.aspx" />
+    <Content Include="Pages\Packing\PackstationConfig.aspx" />
+    <Content Include="Pages\Packing\Relabel.aspx" />
+    <Content Include="Pages\Packing\RePrint.aspx" />
+    <Content Include="Pages\Returns\ReturnsCBR.aspx" />
+    <Content Include="Pages\Returns\ReturnsDC.aspx" />
+    <Content Include="Pages\Returns\Service\ReturnService.svc" />
+    <Content Include="Pages\TestHarness\TestLiveLoads.aspx" />
+    <Content Include="Pages\TestHarness\TestLoadCreation.aspx" />
+    <Content Include="Pages\testservice.aspx" />
+    <Content Include="Pages\Admin\Lookups.svc" />
+    <Content Include="Resources\LookUpService.asmx" />
+    <Content Include="App_Themes\IHFthemes\IHFStyleSheet.css" />
+    <Content Include="audio\Error.wav" />
+    <Content Include="audio\Success.wav" />
+    <Content Include="Handheld\AttachCage.aspx" />
+    <Content Include="Handheld\Error.aspx" />
+    <Content Include="Handheld\ForcedDetachChuteScan.aspx" />
+    <Content Include="Handheld\ForcedDetachTrolleyScan.aspx" />
+    <Content Include="Handheld\ForcedLocate.aspx" />
+    <Content Include="Handheld\Locate.aspx" />
+    <Content Include="Handheld\LocateScanLocation.aspx" />
+    <Content Include="Handheld\LocateScanSku.aspx" />
+    <Content Include="Handheld\LocateTrolleyAttach.aspx" />
+    <Content Include="Handheld\ManualCage.aspx" />
+    <Content Include="Pages\Dashboard\Adminreleasebarcode.aspx" />
+    <Content Include="Pages\Admin\Setup\CageCreate.aspx" />
+    <Content Include="Pages\Admin\Setup\CageTypeSetup.aspx" />
+    <Content Include="Pages\Admin\Setup\ChuteSetup.aspx" />
+    <Content Include="Pages\Admin\Setup\DeviceSetup.aspx" />
+    <Content Include="Pages\Admin\Setup\LaneSetup.aspx" />
+    <Content Include="Pages\Admin\Setup\OverflowToteSetup.aspx" />
+    <Content Include="Pages\Admin\Setup\SkuLabel.aspx" />
+    <Content Include="Pages\Admin\Setup\Trolley.aspx" />
+    <Content Include="Pages\Admin\Setup\WorkstationSetup.aspx" />
+    <Content Include="App_Data\ConnectionStrings.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Handheld\Home.aspx" />
+    <Content Include="Handheld\ManualInductLoad.aspx" />
+    <Content Include="Handheld\ManualInductSku.aspx" />
+    <Content Include="Handheld\PutToChute.aspx" />
+    <Content Include="Pages\Home.aspx" />
+    <Content Include="Pages\Error.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\Delete.GIF" />
+    <Content Include="Images\Edit.GIF" />
+    <Content Include="Images\error.GIF" />
+    <Content Include="Images\logo.gif" />
+    <Content Include="Images\print.gif" />
+    <Content Include="Pages\Login.aspx" />
+    <Content Include="Pages\Packing\DataLoaders\DataLoader.svc" />
+    <Content Include="Pages\Packing\Pack.aspx" />
+    <Content Include="Pages\Packing\SelectOrder.aspx" />
+    <Content Include="Pages\Packing\Test.aspx" />
+    <Content Include="Scripts\angular-1.2.32.min.js" />
+    <Content Include="Scripts\api.pack.funs.js" />
+    <Content Include="Scripts\api.Pack.Helper.js" />
+    <Content Include="Scripts\api.Pack.Load.js" />
+    <Content Include="Scripts\api.pack.obj.js" />
+    <Content Include="Scripts\api.Pack.Shared.js" />
+    <Content Include="Scripts\api.packstationconfig.funs.js" />
+    <Content Include="Scripts\AuthoriseDialog.js" />
+    <Content Include="Scripts\DateandTime.js" />
+    <Content Include="Scripts\jquery-1.6.1.min.js" />
+    <Content Include="Scripts\jquery-1813-custom.js" />
+    <Content Include="Scripts\json2.js" />
+    <Content Include="Scripts\knockout-2.0.0.js" />
+    <Content Include="Scripts\popcalendar.js" />
+    <Content Include="Handheld\SingleLocate.aspx" />
+    <Content Include="Scripts\querySelector.js" />
+    <Content Include="Scripts\returns.js" />
+    <Content Include="Scripts\returnsConstants.js" />
+    <Content Include="Scripts\returnsServiceWrapper.js" />
+    <Content Include="Scripts\underscore-min.js" />
+    <Content Include="Scripts\virtualConsole.js" />
+    <Content Include="Styles\api.pack.css" />
+    <Content Include="Styles\dashboard.css" />
+    <Content Include="Styles\Desktop.css" />
+    <Content Include="Styles\Handheld.css" />
+    <Content Include="Styles\images\na.png" />
+    <Content Include="Styles\images\t.gif" />
+    <Content Include="Styles\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Styles\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="Styles\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="Styles\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="Styles\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Styles\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="Styles\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="Styles\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="Styles\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="Styles\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Styles\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="Styles\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="Styles\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Styles\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="Styles\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="Styles\jquery-1813-custom.css" />
+    <Content Include="Styles\menu.css" />
+    <Content Include="Pages\Testpage.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_GlobalResources\AppMessages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppMessages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Code\WcfBehaviours\ErrorLoggingBehaviourAttribute.cs" />
+    <Compile Include="Code\WcfBehaviours\WcfErrorHandler.cs" />
+    <Compile Include="Handheld\Despatch.aspx.cs">
+      <DependentUpon>Despatch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\Despatch.aspx.designer.cs">
+      <DependentUpon>Despatch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handheld\InductSelectLoad.aspx.cs">
+      <DependentUpon>InductSelectLoad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\InductSelectLoad.aspx.designer.cs">
+      <DependentUpon>InductSelectLoad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handheld\LocateManualAreaChute.aspx.cs">
+      <DependentUpon>LocateManualAreaChute.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\LocateManualAreaChute.aspx.designer.cs">
+      <DependentUpon>LocateManualAreaChute.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handheld\MoveTote.aspx.cs">
+      <DependentUpon>MoveTote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\MoveTote.aspx.designer.cs">
+      <DependentUpon>MoveTote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handheld\Putaway.aspx.cs">
+      <DependentUpon>Putaway.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\Putaway.aspx.designer.cs">
+      <DependentUpon>Putaway.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handheld\RemoveCage.aspx.cs">
+      <DependentUpon>RemoveCage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\RemoveCage.aspx.designer.cs">
+      <DependentUpon>RemoveCage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handheld\RemoveForPack.aspx.cs">
+      <DependentUpon>RemoveForPack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\RemoveForPack.aspx.designer.cs">
+      <DependentUpon>RemoveForPack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handheld\RemoveForPackClearup.aspx.cs">
+      <DependentUpon>RemoveForPackClearup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\RemoveForPackClearup.aspx.designer.cs">
+      <DependentUpon>RemoveForPackClearup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handheld\ScanToVan.aspx.cs">
+      <DependentUpon>ScanToVan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\ScanToVan.aspx.designer.cs">
+      <DependentUpon>ScanToVan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handheld\SelectArea.aspx.cs">
+      <DependentUpon>SelectArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\SelectArea.aspx.designer.cs">
+      <DependentUpon>SelectArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\Setup\StoreDelivGrpSetup.aspx.cs">
+      <DependentUpon>StoreDelivGrpSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin\Setup\StoreDelivGrpSetup.aspx.designer.cs">
+      <DependentUpon>StoreDelivGrpSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dashboard\ClickCollectLateEmail.aspx.cs">
+      <DependentUpon>ClickCollectLateEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dashboard\ClickCollectLateEmail.aspx.designer.cs">
+      <DependentUpon>ClickCollectLateEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\LoadRelease.aspx.cs">
+      <DependentUpon>LoadRelease.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin\LoadRelease.aspx.designer.cs">
+      <DependentUpon>LoadRelease.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\Setup\AreaSetup.aspx.cs">
+      <DependentUpon>AreaSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin\Setup\AreaSetup.aspx.designer.cs">
+      <DependentUpon>AreaSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\Setup\ChutesInArea.aspx.cs">
+      <DependentUpon>ChutesInArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin\Setup\ChutesInArea.aspx.designer.cs">
+      <DependentUpon>ChutesInArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\Setup\FailedToteSetup.aspx.cs">
+      <DependentUpon>FailedToteSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin\Setup\FailedToteSetup.aspx.designer.cs">
+      <DependentUpon>FailedToteSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\Setup\SkuLabelForTest.aspx.cs">
+      <DependentUpon>SkuLabelForTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin\Setup\SkuLabelForTest.aspx.designer.cs">
+      <DependentUpon>SkuLabelForTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\Setup\SystemParams.aspx.cs">
+      <DependentUpon>SystemParams.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin\Setup\SystemParams.aspx.designer.cs">
+      <DependentUpon>SystemParams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dashboard\Cancellation\OrderInquiry.aspx.cs">
+      <DependentUpon>OrderInquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dashboard\Cancellation\OrderInquiry.aspx.designer.cs">
+      <DependentUpon>OrderInquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dashboard\AlertDetails.aspx.cs">
+      <DependentUpon>AlertDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dashboard\AlertDetails.aspx.designer.cs">
+      <DependentUpon>AlertDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dashboard\AlertsWebPart.ascx.cs">
+      <DependentUpon>AlertsWebPart.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dashboard\AlertsWebPart.ascx.designer.cs">
+      <DependentUpon>AlertsWebPart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dashboard\CagesToBeDespatched.aspx.cs">
+      <DependentUpon>CagesToBeDespatched.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dashboard\CagesToBeDespatched.aspx.designer.cs">
+      <DependentUpon>CagesToBeDespatched.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dashboard\ClearTote.aspx.cs">
+      <DependentUpon>ClearTote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dashboard\ClearTote.aspx.designer.cs">
+      <DependentUpon>ClearTote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dashboard\IHFDashboard.Master.cs">
+      <DependentUpon>IHFDashboard.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dashboard\IHFDashboard.Master.designer.cs">
+      <DependentUpon>IHFDashboard.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dashboard\IHFHome.aspx.cs">
+      <DependentUpon>IHFHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dashboard\IHFHome.aspx.designer.cs">
+      <DependentUpon>IHFHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dashboard\ItemsCompletedUser.aspx.cs">
+      <DependentUpon>ItemsCompletedUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dashboard\ItemsCompletedUser.aspx.designer.cs">
+      <DependentUpon>ItemsCompletedUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dashboard\ItemsPacked.aspx.cs">
+      <DependentUpon>ItemsPacked.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dashboard\ItemsPacked.aspx.designer.cs">
+      <DependentUpon>ItemsPacked.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dashboard\LoadDetail.aspx.cs">
+      <DependentUpon>LoadDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dashboard\LoadDetail.aspx.designer.cs">
+      <DependentUpon>LoadDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dashboard\LoadOverview.aspx.cs">
+      <DependentUpon>LoadOverview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dashboard\LoadOverview.aspx.designer.cs">
+      <DependentUpon>LoadOverview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dashboard\LoadReleaseStats.aspx.cs">
+      <DependentUpon>LoadReleaseStats.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dashboard\LoadReleaseStats.aspx.designer.cs">
+      <DependentUpon>LoadReleaseStats.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dashboard\OperationalOverview.aspx.cs">
+      <DependentUpon>OperationalOverview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dashboard\OperationalOverview.aspx.designer.cs">
+      <DependentUpon>OperationalOverview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dashboard\OrdersByHour.aspx.cs">
+      <DependentUpon>OrdersByHour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dashboard\OrdersByHour.aspx.designer.cs">
+      <DependentUpon>OrdersByHour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dashboard\PackedToBeCaged.aspx.cs">
+      <DependentUpon>PackedToBeCaged.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dashboard\PackedToBeCaged.aspx.designer.cs">
+      <DependentUpon>PackedToBeCaged.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dashboard\PackPriority.aspx.cs">
+      <DependentUpon>PackPriority.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dashboard\PackPriority.aspx.designer.cs">
+      <DependentUpon>PackPriority.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dashboard\PackPriorityValue.aspx.cs">
+      <DependentUpon>PackPriorityValue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dashboard\PackPriorityValue.aspx.designer.cs">
+      <DependentUpon>PackPriorityValue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dashboard\ServicedGroupCounts.ascx.cs">
+      <DependentUpon>ServicedGroupCounts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dashboard\ServicedGroupCounts.ascx.designer.cs">
+      <DependentUpon>ServicedGroupCounts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dashboard\ServiceNameCounts.ascx.cs">
+      <DependentUpon>ServiceNameCounts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dashboard\ServiceNameCounts.ascx.designer.cs">
+      <DependentUpon>ServiceNameCounts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dashboard\SkuSearch.aspx.cs">
+      <DependentUpon>SkuSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dashboard\SkuSearch.aspx.designer.cs">
+      <DependentUpon>SkuSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dashboard\StoreManifest.aspx.cs">
+      <DependentUpon>StoreManifest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dashboard\StoreManifest.aspx.designer.cs">
+      <DependentUpon>StoreManifest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dashboard\TrolleyDetail.aspx.cs">
+      <DependentUpon>TrolleyDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dashboard\TrolleyDetail.aspx.designer.cs">
+      <DependentUpon>TrolleyDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dashboard\TrolleyOverview.aspx.cs">
+      <DependentUpon>TrolleyOverview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dashboard\TrolleyOverview.aspx.designer.cs">
+      <DependentUpon>TrolleyOverview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Packing\PackstationConfig.aspx.cs">
+      <DependentUpon>PackstationConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Packing\PackstationConfig.aspx.designer.cs">
+      <DependentUpon>PackstationConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Packing\Relabel.aspx.cs">
+      <DependentUpon>Relabel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Packing\Relabel.aspx.designer.cs">
+      <DependentUpon>Relabel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Packing\RePrint.aspx.cs">
+      <DependentUpon>RePrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Packing\RePrint.aspx.designer.cs">
+      <DependentUpon>RePrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Returns\ReturnsCBR.aspx.cs">
+      <DependentUpon>ReturnsCBR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Returns\ReturnsCBR.aspx.designer.cs">
+      <DependentUpon>ReturnsCBR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Returns\ReturnsDC.aspx.cs">
+      <DependentUpon>ReturnsDC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Returns\ReturnsDC.aspx.designer.cs">
+      <DependentUpon>ReturnsDC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Returns\Service\ReturnService.svc.cs">
+      <DependentUpon>ReturnService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TestHarness\TestLiveLoads.aspx.cs">
+      <DependentUpon>TestLiveLoads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\TestHarness\TestLiveLoads.aspx.designer.cs">
+      <DependentUpon>TestLiveLoads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TestHarness\TestLoadCreation.aspx.cs">
+      <DependentUpon>TestLoadCreation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\TestHarness\TestLoadCreation.aspx.designer.cs">
+      <DependentUpon>TestLoadCreation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\testservice.aspx.cs">
+      <DependentUpon>testservice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\testservice.aspx.designer.cs">
+      <DependentUpon>testservice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\Lookups.svc.cs">
+      <DependentUpon>Lookups.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\LookUpService.asmx.cs">
+      <DependentUpon>LookUpService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Handheld\AttachCage.aspx.cs">
+      <DependentUpon>AttachCage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\AttachCage.aspx.designer.cs">
+      <DependentUpon>AttachCage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handheld\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handheld\ForcedDetachChuteScan.aspx.cs">
+      <DependentUpon>ForcedDetachChuteScan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\ForcedDetachChuteScan.aspx.designer.cs">
+      <DependentUpon>ForcedDetachChuteScan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handheld\ForcedDetachTrolleyScan.aspx.cs">
+      <DependentUpon>ForcedDetachTrolleyScan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\ForcedDetachTrolleyScan.aspx.designer.cs">
+      <DependentUpon>ForcedDetachTrolleyScan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handheld\ForcedLocate.aspx.cs">
+      <DependentUpon>ForcedLocate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\ForcedLocate.aspx.designer.cs">
+      <DependentUpon>ForcedLocate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handheld\Locate.aspx.cs">
+      <DependentUpon>Locate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\Locate.aspx.designer.cs">
+      <DependentUpon>Locate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handheld\LocateScanLocation.aspx.cs">
+      <DependentUpon>LocateScanLocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\LocateScanLocation.aspx.designer.cs">
+      <DependentUpon>LocateScanLocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handheld\LocateScanSku.aspx.cs">
+      <DependentUpon>LocateScanSku.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\LocateScanSku.aspx.designer.cs">
+      <DependentUpon>LocateScanSku.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handheld\LocateTrolleyAttach.aspx.cs">
+      <DependentUpon>LocateTrolleyAttach.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\LocateTrolleyAttach.aspx.designer.cs">
+      <DependentUpon>LocateTrolleyAttach.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handheld\ManualCage.aspx.cs">
+      <DependentUpon>ManualCage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\ManualCage.aspx.designer.cs">
+      <DependentUpon>ManualCage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dashboard\Adminreleasebarcode.aspx.cs">
+      <DependentUpon>Adminreleasebarcode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dashboard\Adminreleasebarcode.aspx.designer.cs">
+      <DependentUpon>Adminreleasebarcode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\Setup\CageCreate.aspx.cs">
+      <DependentUpon>CageCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin\Setup\CageCreate.aspx.designer.cs">
+      <DependentUpon>CageCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\Setup\CageTypeSetup.aspx.cs">
+      <DependentUpon>CageTypeSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin\Setup\CageTypeSetup.aspx.designer.cs">
+      <DependentUpon>CageTypeSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\Setup\ChuteSetup.aspx.cs">
+      <DependentUpon>ChuteSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin\Setup\ChuteSetup.aspx.designer.cs">
+      <DependentUpon>ChuteSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\Setup\DeviceSetup.aspx.cs">
+      <DependentUpon>DeviceSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin\Setup\DeviceSetup.aspx.designer.cs">
+      <DependentUpon>DeviceSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\Setup\LaneSetup.aspx.cs">
+      <DependentUpon>LaneSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin\Setup\LaneSetup.aspx.designer.cs">
+      <DependentUpon>LaneSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\Setup\OverflowToteSetup.aspx.cs">
+      <DependentUpon>OverflowToteSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin\Setup\OverflowToteSetup.aspx.designer.cs">
+      <DependentUpon>OverflowToteSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\Setup\SkuLabel.aspx.cs">
+      <DependentUpon>SkuLabel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin\Setup\SkuLabel.aspx.designer.cs">
+      <DependentUpon>SkuLabel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\Setup\Trolley.aspx.cs">
+      <DependentUpon>Trolley.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin\Setup\Trolley.aspx.designer.cs">
+      <DependentUpon>Trolley.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\Setup\WorkstationSetup.aspx.cs">
+      <DependentUpon>WorkstationSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin\Setup\WorkstationSetup.aspx.designer.cs">
+      <DependentUpon>WorkstationSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handheld\Handheld.Master.cs">
+      <DependentUpon>Handheld.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\Handheld.Master.designer.cs">
+      <DependentUpon>Handheld.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Handheld\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handheld\ManualInductLoad.aspx.cs">
+      <DependentUpon>ManualInductLoad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\ManualInductLoad.aspx.designer.cs">
+      <DependentUpon>ManualInductLoad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handheld\ManualInductSku.aspx.cs">
+      <DependentUpon>ManualInductSku.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\ManualInductSku.aspx.designer.cs">
+      <DependentUpon>ManualInductSku.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handheld\PutToChute.aspx.cs">
+      <DependentUpon>PutToChute.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\PutToChute.aspx.designer.cs">
+      <DependentUpon>PutToChute.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Packing\DataLoaders\DataLoader.svc.cs">
+      <DependentUpon>DataLoader.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Packing\Pack.aspx.cs">
+      <DependentUpon>Pack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Packing\Pack.aspx.designer.cs">
+      <DependentUpon>Pack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Packing\SelectOrder.aspx.cs">
+      <DependentUpon>SelectOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Packing\SelectOrder.aspx.designer.cs">
+      <DependentUpon>SelectOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Packing\Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Packing\Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RI.Master.cs">
+      <DependentUpon>RI.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\RI.Master.designer.cs">
+      <DependentUpon>RI.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pages\Testpage.aspx.cs">
+      <DependentUpon>Testpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Testpage.aspx.designer.cs">
+      <DependentUpon>Testpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handheld\SingleLocate.aspx.cs">
+      <DependentUpon>SingleLocate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\SingleLocate.aspx.designer.cs">
+      <DependentUpon>SingleLocate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\TestLookup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessClasses\IHF.BusinessLayer.BusinessClasses.csproj">
+      <Project>{E49C2506-12E7-4CB8-BF4C-EA9D28DC8A51}</Project>
+      <Name>IHF.BusinessLayer.BusinessClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessObjects\IHF.BusinessLayer.DataAccessObjects.csproj">
+      <Project>{C316DD9A-9A8F-4EC7-9B59-CD398EFBAE72}</Project>
+      <Name>IHF.BusinessLayer.DataAccessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataServices\IHF.EnterpriseLibrary.DataServices.csproj">
+      <Project>{BC03F4E9-AF7C-40A8-90B1-04D86F838135}</Project>
+      <Name>IHF.EnterpriseLibrary.DataServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserManagement\IHF.Security.UserManagement.csproj">
+      <Project>{67F881F8-B020-4BEA-8D6D-0FC1A4036229}</Project>
+      <Name>IHF.Security.UserManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Util\IHF.BusinessLayer.Util.csproj">
+      <Project>{AA9D1B05-C633-47A1-ACE1-4028E2B51CA7}</Project>
+      <Name>IHF.BusinessLayer.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\popcalendar.css" />
+    <Content Include="Styles\Returns.css" />
+    <Content Include="ThirdPartyLibraries\AjaxControlToolkit.dll" />
+    <Content Include="ThirdPartyLibraries\Telerik.Web.UI.dll" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Handheld\Handheld.Master" />
+    <Content Include="Pages\RI.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+    <Folder Include="Pages\Packing\WebParts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Dashboard\IHFDashboard.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\AppMessages.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>AppMessages.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="package.json" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4993</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

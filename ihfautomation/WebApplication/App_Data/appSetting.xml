@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<appSettings>
+  <add key   = "applicationName"
+     value = "IHF" />
+  <add key   = "IHFDASH_applicationName"
+       value = "IHFDSH" />
+  <add key   = "SwitchOffNavigationSecurity"
+       value = "true" />
+  <add key   = "EnableBrowserCheck"
+       value = "true"/>
+  <add key   = "ErrorUrl"
+       value = "~/pages/error.aspx" />
+  <add key   = "HErrorUrl"
+       value = "~/handheld/error.aspx" />
+  <add key   = "LoginUrl"
+       value = "~/pages/login.aspx" />
+  <add key   = "HomeUrl"
+       value = "~/pages/home.aspx" />
+  <add key   = "HHomeUrl"
+       value = "~/handheld/home.aspx" />
+  <add key   = "HandheldBrowser"
+       value = "msie 6.0" />
+  <add key   = "ErrorSound"
+       value = "/audio/Error.wav" />
+  <add key   = "SuccessSound"
+       value = "/audio/Success.wav" />
+  <add key="MPackAllocationTries" value="21"/>
+  <add key="MPackServiceTries"    value="3"/>
+  <add key="MPackCredential"      value ="ittestuser;metapack"/>
+  <add key="ServiceAddress"       value="http://dm2-qa.metapack.com/api/4.x/services/"/>
+  <add key="returns_port"         value=":83" />
+  <add key="returns_default_page" value="/login.aspx" />
+  <add key="servernumber"         value="01" />
+  <add key="PrintServiceAddress"  value="http://tsdcpri-tst02:8011/PrintService.svc"/>
+  <add key="AdvancedPackingGroups" value="DC Manager,Supervisor" />
+</appSettings>
+

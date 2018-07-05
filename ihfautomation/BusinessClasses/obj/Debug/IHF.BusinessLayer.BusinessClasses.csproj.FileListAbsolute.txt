@@ -1,0 +1,9 @@
+c:\projects\ihfautomation\IHFAutomation\BusinessClasses\bin\Debug\IHF.BusinessLayer.BusinessClasses.dll
+c:\projects\ihfautomation\IHFAutomation\BusinessClasses\bin\Debug\IHF.BusinessLayer.BusinessClasses.pdb
+c:\projects\ihfautomation\IHFAutomation\BusinessClasses\bin\Debug\IHF.BusinessLayer.Util.dll
+c:\projects\ihfautomation\IHFAutomation\BusinessClasses\bin\Debug\IHF.EnterpriseLibrary.DataServices.dll
+c:\projects\ihfautomation\IHFAutomation\BusinessClasses\bin\Debug\IHF.EnterpriseLibrary.DataServices.pdb
+c:\projects\ihfautomation\IHFAutomation\BusinessClasses\bin\Debug\IHF.BusinessLayer.Util.pdb
+c:\projects\ihfautomation\IHFAutomation\BusinessClasses\obj\Debug\ResolveAssemblyReference.cache
+c:\projects\ihfautomation\IHFAutomation\BusinessClasses\obj\Debug\IHF.BusinessLayer.BusinessClasses.dll
+c:\projects\ihfautomation\IHFAutomation\BusinessClasses\obj\Debug\IHF.BusinessLayer.BusinessClasses.pdb

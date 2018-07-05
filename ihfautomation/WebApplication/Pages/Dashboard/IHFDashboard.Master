@@ -1,0 +1,186 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="IHFDashboard.master.cs" Inherits="IHF.ApplicationLayer.Web.Pages.Dashboard.IHFDashboard" %>
+
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link rel="Stylesheet" type="text/css" href="/Styles/Desktop.css" />
+    <link href="/Styles/menu.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript" src="../../../Scripts/DateandTime.js" />
+    <script type="text/javascript" language="javascript"></script>
+    <asp:ContentPlaceHolder 
+        ID="head" 
+        runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body onload="startclock()">
+    <form id="form1" runat="server">
+        <div class="page">
+            <!-- BANNER TABLE ---------->
+            <div class="header">
+                <table>
+	                <tr>
+                        <!-- LOGO ---------->
+		                <td>
+		                    <a href="/Pages/Dashboard/IHFHome.aspx">
+                                <img src= "/Images/logo.gif" alt="River Island" />
+                            </a>
+		                </td>
+                        <!-- END OF LOGO --->
+                
+                        <!-- APPLICATION HEADING ---------->
+		                <td class ="title">
+		                    IHF - Automation
+		                </td>
+		                <!-- END OF APPLICATION HEADING ---------->
+
+                        <!-- DATE TIME ---------->
+                        <td class ="datetime">
+		                    <table>
+		                        <tr>
+		                            <td>
+	                                    <div id="date"></div>
+		                            </td>    
+		                        </tr>
+		                        <tr>
+		                            <td>
+		                                <div id="time"></div>
+		                            </td>    
+		                       </tr>
+		                    </table>
+		                </td>
+                        <!-- END OF DATE TIME ---------->
+		    
+	                </tr>
+                </table>
+                <!-- END OF BANNER TABLE ---------->
+            </div>
+
+            <!-- USER DETAILS BANNER TABLE ---------->
+            <div class="subheader">
+                <table >
+	                <tr>
+	                    <td class="loginuser">
+	                        <asp:LoginName 
+                                ID="LoginName" 
+                                runat="server" 
+                                FormatString = "{0}" 
+                                oninit="LoginName_Init" />
+                        </td>
+	            
+	                    <td class="logout">
+	                        <asp:LoginStatus 
+                                ID="LoginStatus" 
+                                runat="server" 
+                                LogoutAction="RedirectToLoginPage" 
+                                LogoutPageUrl="~/Pages/Login.aspx" />
+	                    </td>
+	                </tr>
+	        
+	                <%--<tr>
+	                    <td colspan="2" style="background-color:#666677;text-align:right;color:White;">
+	                        <Marquee><i>Notifications . . .</i></Marquee>
+	                    </td>
+	                </tr>--%>
+	        
+                </table>
+            </div>
+            <!-- END OF USER DETAILS BANNER TABLE ---------->
+        
+            <!-- MAIN TABLE -------------------------------->
+            <table class="maintab">
+	            <tr>
+                    <!-- Navigation-------------------------------->
+		            <td class="nav">
+		                <asp:menu id="Navigation"
+                            Orientation="Horizontal"
+                            staticdisplaylevels="1"
+                            staticsubmenuindent="10px"
+                            Font-names="Verdana"
+                            runat="server" BackColor="Black" DynamicHorizontalOffset="2" 
+                            Font-Size="1em"  
+                            DataSourceID="IHFDSHSiteMapDataSource">
+                 
+                            <StaticSelectedStyle BackColor="Black" />
+
+                            <LevelMenuItemStyles>
+                                <asp:MenuItemStyle CssClass="level1" />
+                                <asp:MenuItemStyle CssClass="level2"/>
+                                <asp:MenuItemStyle CssClass="level3" />
+                                <asp:MenuItemStyle CssClass="level4" />
+                            </LevelMenuItemStyles>
+
+                            <StaticMenuItemStyle 
+                                HorizontalPadding="5px" 
+                                VerticalPadding="3px" 
+                                Font-Size="Small" 
+                                ItemSpacing="10px" 
+                            />
+
+                            <DynamicMenuStyle 
+                                BackColor="Black" 
+                            />
+                    
+                            <DynamicSelectedStyle 
+                                BackColor="Black" 
+                            />
+                    
+                            <DynamicMenuItemStyle 
+                                HorizontalPadding="5px" 
+                                VerticalPadding="3px" 
+                            />
+
+                        </asp:menu>
+                        
+                        <asp:SiteMapDataSource 
+                            ID="IHFDSHSiteMapDataSource" 
+                            runat="server"
+                            SiteMapProvider="IHFDASHSitemapProvider"
+                            EnableViewState="false" ShowStartingNode="false"/>
+		            </td>
+    	            <!-- END OF Navigation------------------------->
+                </tr>
+
+                <tr>
+                    <td>
+                        <div id="Error" class="error" runat="server" clientidmode="Static" enableviewstate="false">
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+    	            <!------------------------CONTENT AREA------------------------------------------------->
+                    
+		                <td>
+                            <div class="childpage">
+<%--                                <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
+                                </telerik:RadScriptManager>--%>
+		                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                        </td>
+                    
+                    <!-------------------- END OF CONTENT AREA --------------------------------------------->
+                    
+			    </tr>
+			
+			    <tr>
+                    <!-- FOOTER--------------------->
+			        <td colspan = "2" class="footer">
+			            River Island - Copyright &#169;
+			        </td>
+                    <!-- END OF FOOTER ------------->
+			    </tr>
+
+	        </table>
+            <!-- END OF MAIN TABLE -------------------------------->			
+		</div>
+
+    <div>
+      
+    </div>
+    </form>
+</body>
+</html>

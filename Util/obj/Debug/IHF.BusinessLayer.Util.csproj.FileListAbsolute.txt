@@ -1,0 +1,5 @@
+C:\projects\ihfautomation\Util\bin\Debug\IHF.BusinessLayer.Util.dll
+C:\projects\ihfautomation\Util\bin\Debug\IHF.BusinessLayer.Util.pdb
+C:\projects\ihfautomation\Util\obj\Debug\ResolveAssemblyReference.cache
+C:\projects\ihfautomation\Util\obj\Debug\IHF.BusinessLayer.Util.dll
+C:\projects\ihfautomation\Util\obj\Debug\IHF.BusinessLayer.Util.pdb

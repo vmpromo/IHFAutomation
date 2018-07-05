@@ -1,0 +1,118 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Handheld.master.cs" Inherits="IHF.ApplicationLayer.Web.Handheld.Handheld" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>IHF Automation</title>
+    <meta http-equiv="KeyCapture" content="KeyValue:0x0D; KeyEvent:url('javascript:checkAndPost()');" />
+    <meta http-equiv="KeyCapture" content="AccelerateKey:NORM;" />
+    <link type="text/css" rel="Stylesheet" href="../Styles/Handheld.css" />
+</head>
+<body onload="Focus()">
+    <form id="form1" runat="server">
+    <input id="ParentMenuId" type="hidden" value="1" runat="server" />
+    <div id="mainBody" runat="server" class="page">
+        <div id="Header" class="header">
+            <table>
+                <tr>
+                    <td style="width: 50%">
+                        River Island
+                    </td>
+                    <td style="width: 50%; text-align: center;">
+                        IHF Automation
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="SubHeader" class="subheader">
+            <table>
+                <tr>
+                    <td width="30px">
+                        Welcome,&nbsp;
+                    </td>
+                    <td id="user" runat="server">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="menu" runat="server" class="menu">
+            <table>
+                <tr>
+                    <td visible="false" id="menuItem8" runat="server">
+                        8 - Cancel
+                    </td>
+                    <td id="menuItem9">
+                        9 - Home page
+                    </td>
+                    <td id="menuItem10">
+                        0 - Sign out
+                    </td>
+                </tr>
+                <tr>
+                    <td id="menuItem1" runat="server">
+                    </td>
+                    <td id="menuItem2" runat="server" colspan="2">
+                    </td>
+                </tr>
+                <tr>
+                    <td id="menuItem3" runat="server">
+                    </td>
+                    <td id="menuItem4" runat="server" colspan="2">
+                    </td>
+                </tr>
+                <tr>
+                    <td id="menuItem5" runat="server">
+                    </td>
+                    <td id="menuItem6" runat="server" colspan="2">
+                    </td>
+                </tr>
+                <tr>
+                    <td id="menuPrevItem" runat="server" align="left">
+                    </td>
+                    <td id="menuNextItem" runat="server" colspan="2" align="right">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="message" runat="server" class="message">
+            Please enter menu number.
+        </div>
+        <div id="input" class="input">
+            <asp:TextBox ID="barcode" BackColor="#FFFFFF" BorderStyle="Solid" BorderWidth="1px"
+                BorderColor="Black" runat="server" Width="296px" Font-Size="1em">
+            </asp:TextBox>
+        </div>
+        <center>
+                    <div id="Panel1" runat="server" class="DialogBox">
+
+                        <div id="Panel2" runat="server" class="DialogBoxHeader">
+                            IHF Automation
+                        </div>
+
+                        <div id="PopupMessage" runat="server" class="PopupMessage">
+                            
+                        </div>        
+    
+                        <div class="DialogFooter">        
+                            <input 
+                                id="btnCancel" 
+                                type="button" 
+                                runat="server"  
+                                value="OK" 
+                                class="CloseButton"
+                                onclick="HidePanel();Focus();" />        
+                        </div>   
+    
+                    </div>  
+                </center>
+        <div class="ChildPage">
+            <asp:ContentPlaceHolder ID="Content" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="footer">
+            River Island - Copyright &copy;
+        </div>
+    </div>
+    </form>
+</body>
+</html>
