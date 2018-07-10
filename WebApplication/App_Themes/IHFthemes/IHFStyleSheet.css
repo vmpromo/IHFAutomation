@@ -1,0 +1,697 @@
+﻿body
+{
+    background-color: #EEEEEE;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    
+}
+
+a
+{
+    font-size: small;
+}
+
+a.ajlink
+{
+    cursor: pointer;
+    color: Blue;
+}
+
+a:hover
+{
+    color: Maroon;
+}
+
+dl
+{
+    margin: 0 0 20px 20px;
+    padding: 0;
+    background: #DCDCDC url(bottom.gif) no-repeat bottom left;
+}
+dt
+{
+    margin: 0 0 10px 0;
+    padding: 5px;
+    font-size: 130%;
+    color: #fff;
+    background: #8FB1DF url(top.gif) no-repeat top left;
+}
+dd
+{
+    margin: 0 0 0 10px;
+    padding: 0 1px 10px 1px;
+    color: #666;
+    font-family: Verdana, sans-serif;
+    font-size: 90%;
+}
+
+.container
+{
+    background: #ccc;
+    color: #fff;
+    margin: 0 5px;
+}
+
+.rt, .rb
+{
+    display: block;
+}
+
+
+.rt *, .rb *
+{
+    display: block;
+    height: 1px;
+    overflow: hidden;
+    background: #ccc;
+}
+
+
+.r1
+{
+    margin: 0 5px;
+}
+
+
+.r2
+{
+    margin: 0 3px;
+}
+
+.r3
+{
+    margin: 0 2px;
+}
+
+.r4
+{
+    margin: 0 1px;
+    height: 2px;
+}
+.ErrorMessage
+{
+    color: #CC0033;
+    font-weight: 700;
+    font-size: medium;
+}
+
+
+.ApplicationHeader
+{
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 40px;
+    width: 100%;
+    background-color: #000084;
+    color: white;
+    text-align: center;
+}
+
+.ApplicationHeaderApplicationName
+{
+    font-weight: bold;
+    font-size: 130%;
+    display: inline;
+    position: relative;
+    top: 25%;
+}
+
+.ApplicationHeaderLogOffSection
+{
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #000084;
+    font-weight: bold;
+    color: white;
+}
+
+.ApplicationHeaderLogOffSection a
+{
+    color: white;
+}
+
+.ApplicationHeaderLogOffSection a:hover
+{
+    color: red;
+}
+
+.ApplicationHeaderDialog
+{
+    margin-top: 0;
+    height: 40px;
+    margin-bottom: 0;
+    width: 100%;
+    background-color: #000084;
+    color: white;
+    font-weight: bold;
+    font-size: 130%;
+    text-align: center;
+}
+
+.ApplicationHeaderDialogLabel
+{
+    position: relative;
+    top: 5px;
+}
+
+.ApplicationFooter
+{
+    font-size: medium;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    background-color: #000084;
+    font-weight: bold;
+    font-family: Garamond;
+    width: 100%;
+    height: 100%;
+    display: inline-table;
+}
+
+.AutocompleteCompletionListElement
+{
+ 
+    visibility: hidden;
+    margin: 0px !important;
+    background-color: white;
+    color: windowtext;
+    border: buttonshadow;
+    border-width: 1px;
+    border-style: solid;
+    cursor: 'default';
+    overflow: auto;
+    height: 150px;
+    text-align: left;
+    padding-left: 0px;
+    list-style-type: none;
+    z-index: 300;
+    font-size :90%;
+
+}
+
+
+.AutocompleteHighlightedListItem
+{
+    background-color: #ffff99 ; 	
+    color: Red; 	
+    padding: 10px;
+
+}
+
+.AutocompleteListItem
+{
+    background-color: window;
+    color: windowtext;
+    padding: 1px;
+
+    
+}
+
+.LoginStatus
+{
+    position: relative;
+    left: 0px;
+    top: -35px;
+    width: 400px;
+}
+
+.RIReportPosition
+{
+    position: relative;
+    top: 14px;
+    left: 50px;
+    z-index: 299;
+}
+
+.GridView
+{
+    border-collapse: collapse;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    border:#999999 1px solid;
+    
+}
+
+
+.GridViewPager>td>table>tbody>tr>td
+{
+   
+    color: Black;
+    left: auto;
+    border-bottom: #999999 1px solid;
+    border-left: #999999 1px solid;
+    border-top: #999999 1px solid;
+    border-right: #999999 1px solid;
+    padding-bottom: 2px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    
+}
+.GridView>tbody>tr>td
+{
+    border-bottom: #999999 1px solid;
+    border-left: #999999 1px solid;
+    padding-bottom: 2px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    border-top: #999999 1px solid;
+    border-right: #999999 1px solid;
+    font-size: 1.0em;
+}
+
+
+.GridViewHeader th
+{    
+    border-top: #7795BD 1px solid;
+    border-right: #7795BD 1px solid;
+    padding-bottom: 2px;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 1.0em;
+    border-bottom: #7795BD 1px solid;
+    border-left: #7795BD 1px solid;
+    padding-top: 1px;
+
+    
+}
+
+
+.GridViewHeader th
+{
+    text-align: left;
+    padding-bottom: 4px;
+    background-color: #a7c942;
+    background-color:#7795BD;
+    color: #fff;
+    font-size: 1.0em;
+    padding-top: 1px;
+}
+
+.GridViewRow
+{
+    background-color:#EEEEEE !Important
+ }
+ 
+.GridViewAlternatingRow
+{
+    background-color:#DCDCDC !Important;
+}
+
+.GridViewFooter
+{
+    background-color:#999999 !Important;
+    color:#000000 !Important;
+}
+
+
+.frozenTop
+{
+    /* width: 10px;*/
+}
+
+.Menu-Container
+{
+    height: 24px;
+    background: #7795BD;
+}
+
+
+
+/* Apply formatting to various controls contained within the tables used to structure a web page layout */
+
+.LayoutTableContents tr, input, select, option
+{
+    font-size: small;
+    text-align: left;
+    margin-left: 1px;
+}
+
+.LayoutTableContents div
+{
+    background-color: #EEEEEE;
+}
+
+.LayoutPanelTable
+{
+    border: solid 1px #ACA899;
+}
+
+/* END LayoutTableContents */
+
+/* When the Menu control's Orientation property is Vertical the adapter wraps the menu with DIV */
+/* whose class is AspNet-Menu-Vertical. */
+/* Note that the example menu in this web site uses relative positioning to force the menu to occupy */
+/* a specific place in the web page.  Your web site will likely use a different technique to position your */
+/* menu.  So feel free to change all the properties found in this CSS rule if you clone this style sheet. */
+/* There is nothing, per se, that is magical about these particular property value choices.  They happen to */
+/* work well for the sample page used to demonstrate an adapted menu. */
+.PrettyMenu
+{
+    font-family: "Trebuchet MS" , Verdana, Arial, Helvetica, sans-serif;
+    font-size: smaller;
+    font-weight: bold;
+}
+
+.PrettyMenu .AspNet-Menu-Vertical
+{
+    position: relative;
+    top: 3em;
+    left: 0;
+    z-index: 300;
+}
+
+/* The menu adapter renders an unordered list (ul) in HTML for each tier in the menu. */
+/* So, effectively says: style all tiers in the menu this way... */
+.PrettyMenu ul
+{
+    background: #7795BD;
+}
+
+/* Top tier */
+.PrettyMenu .AspNet-Menu-Vertical ul.AspNet-Menu
+{
+    width: 8em;
+}
+
+/* This rule effectively says: style all tiers EXCEPT THE TOP TIER in the menu this way... */
+/* In other words, this rule can be used to style the second and third tiers of the menu without impacting */
+/* the topmost tier's appearance. */
+.PrettyMenu ul.AspNet-Menu ul
+{
+    width: 10.5em;
+    left: 8.9em;
+    top: -1em;
+    z-index: 400;
+}
+
+.PrettyMenu ul.AspNet-Menu ul ul
+{
+    width: 11.5em;
+    left: 10.4em;
+}
+
+/* The menu adapter generates a list item (li) in HTML for each menu item. */
+/* Use this rule create the common appearance of each menu item. */
+.PrettyMenu ul.AspNet-Menu li
+{
+    background: #7795BD url(bg_nav.gif) repeat-x;
+}
+
+/* Within each menu item is a link or a span, depending on whether or not the MenuItem has defined it's */
+/* NavigateUrl property. By setting a transparent background image here you can effectively layer two images */
+/* in each menu item.  One comes from the CSS rule (above) governing the li tag that each menu item has. */
+/* The second image comes from this rule (below). */
+.PrettyMenu ul.AspNet-Menu li a, .PrettyMenu ul.AspNet-Menu li span
+{
+    color: black;
+    padding: 4px 2px 4px 8px;
+    border: 1px solid #648ABD;
+    border-bottom: 0;
+    background: transparent url(arrowRight.gif) right center no-repeat;
+}
+
+/* When a menu item contains no submenu items it is marked as a "leaf" and can be styled specially by this rule. */
+.PrettyMenu ul.AspNet-Menu li.AspNet-Menu-Leaf a, .PrettyMenu ul.AspNet-Menu li.AspNet-Menu-Leaf span
+{
+    background-image: none;
+}
+
+/* Not used presently.  This is here if you modify the menu adapter so it renders img tags, too. */
+.PrettyMenu ul.AspNet-Menu li a img
+{
+    border-style: none;
+    vertical-align: middle;
+}
+
+/* When you hover over a menu item, this rule comes into play. */
+/* Browsers that do not support the CSS hover pseudo-class, use JavaScript to dynamically change the */
+/* menu item's li tag so it has the AspNet-Menu-Hover class when the cursor is over that li tag. */
+/* See MenuAdapter.js (in the JavaScript folder). */
+.PrettyMenu ul.AspNet-Menu li:hover, .PrettyMenu ul.AspNet-Menu li.AspNet-Menu-Hover
+{
+    background: #7795BD;
+}
+
+.PrettyMenu ul.AspNet-Menu li:hover a, .PrettyMenu ul.AspNet-Menu li:hover span, .PrettyMenu ul.AspNet-Menu li.AspNet-Menu-Hover a, .PrettyMenu ul.AspNet-Menu li.AspNet-Menu-Hover span, .PrettyMenu ul.AspNet-Menu li:hover li:hover a, .PrettyMenu ul.AspNet-Menu li:hover li:hover span, .PrettyMenu ul.AspNet-Menu li.AspNet-Menu-Hover li.AspNet-Menu-Hover a, .PrettyMenu ul.AspNet-Menu li.AspNet-Menu-Hover li.AspNet-Menu-Hover span, .PrettyMenu ul.AspNet-Menu li:hover li:hover ul a:hover, .PrettyMenu ul.AspNet-Menu li:hover li:hover ul span.Asp-Menu-Hover, .PrettyMenu ul.AspNet-Menu li.AspNet-Menu-Hover li.AspNet-Menu-Hover ul a:hover, .PrettyMenu ul.AspNet-Menu li.AspNet-Menu-Hover li.AspNet-Menu-Hover ul span.Asp-Menu-Hover
+{
+    color: White;
+}
+
+.PrettyMenu ul.AspNet-Menu li:hover ul a, .PrettyMenu ul.AspNet-Menu li:hover ul span, .PrettyMenu ul.AspNet-Menu li.AspNet-Menu-Hover ul a, .PrettyMenu ul.AspNet-Menu li.AspNet-Menu-Hover ul span, .PrettyMenu ul.AspNet-Menu li:hover li:hover ul a, .PrettyMenu ul.AspNet-Menu li:hover li:hover ul span, .PrettyMenu ul.AspNet-Menu li.AspNet-Menu-Hover li.AspNet-Menu-Hover ul a, .PrettyMenu ul.AspNet-Menu li.AspNet-Menu-Hover li.AspNet-Menu-Hover ul span
+{
+    color: Black;
+}
+
+/* While you hover over a list item (li) you are also hovering over a link or span because */
+/* the link or span covers the interior of the li.  So you can set some hover-related styles */
+/* in the rule (above) for the li but set other hover-related styles in this (below) rule. */
+.PrettyMenu ul.AspNet-Menu li a:hover, .PrettyMenu ul.AspNet-Menu li span.Asp-Menu-Hover
+{
+    color: White;
+    background: transparent url(activeArrowRight.gif) right center no-repeat;
+}
+
+.PrettyMenu ul.AspNet-Menu li.AspNet-Menu-Leaf a:hover
+{
+    background-image: none;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* When the Menu control's Orientation property is Horizontal the adapter wraps the menu with DIV */
+/* whose class is AspNet-Menu-Horizontal. */
+/* Note that the example menu in this web site uses absolute positioning to force the menu to occupy */
+/* a specific place in the web page.  Your web site will likely use a different technique to position your */
+/* menu.  So feel free to change all the properties found in this CSS rule if you clone this style sheet. */
+/* There is nothing, per se, that is magical about these particular property value choices.  They happen to */
+/* work well for the sample page used to demonstrate an adapted menu. */
+
+.PrettyMenu .AspNet-Menu-Horizontal
+{
+    position: relative; /* 	Removing the left and top padding and changed the position to relative inorder to make menu bar grow along with 	page's width. 	left: 10px;     top: 75px;*/
+    width: 100%;
+    z-index: 300;
+}
+
+/* This rule controls the width of the top tier of the horizontal menu. */
+/* BE SURE TO MAKE THIS WIDE ENOUGH to accommodate all of the top tier menu items that are lined */
+/* up from left to right. In other words, this width needs to be the width of the individual */
+/* top tier menu items multiplied by the number of items. */
+.PrettyMenu .AspNet-Menu-Horizontal ul.AspNet-Menu
+{
+    width: 88%;
+    background: #7795BD url(bg_nav.gif) repeat-x;
+}
+
+/* This rule effectively says: style all tiers EXCEPT THE TOP TIER in the menu this way... */
+/* In other words, this rule can be used to style the second and third tiers of the menu without impacting */
+/* the topmost tier's appearance. */
+/* Remember that only the topmost tier of the menu is horizontal.  The second and third tiers are vertical. */
+/* So, they need a much smaller width than the top tier.  Effectively, the width specified here is simply */
+/* the width of a single menu item in the second and their tiers. */
+.PrettyMenu .AspNet-Menu-Horizontal ul.AspNet-Menu ul
+{
+    width: 4.5em;
+    left: 0px;
+    top: 100%;
+}
+
+.PrettyMenu .AspNet-Menu-Horizontal ul.AspNet-Menu ul ul
+{
+    top: 1.4em;
+}
+
+.PrettyMenu .AspNet-Menu-Horizontal ul.AspNet-Menu ul ul
+{
+    width: 8em;
+}
+
+/* Generally, you use this rule to set style properties that pertain to all menu items. */
+/* One exception is the width set here.  We will override this width with a more specific rule (below) */
+/* That sets the width for all menu items from the second tier downward in the menu. */
+.PrettyMenu .AspNet-Menu-Horizontal ul.AspNet-Menu li
+{
+    width: 10em;
+    text-align: left;
+}
+
+/* This rule establishes the width of menu items below the top tier.  This allows the top tier menu items */
+/* to be narrower, for example, than the sub-menu items. */
+/* This value you set here should be slightly larger than the left margin value in the next rule. See */
+/* its comment for more details. */
+.PrettyMenu .AspNet-Menu-Horizontal ul.AspNet-Menu ul li
+{
+    text-align: left;
+    width: 12.5em;
+}
+
+.PrettyMenu .AspNet-Menu-Horizontal ul.AspNet-Menu ul ul li
+{
+    width: 11.5em;
+}
+
+/* Third tier menus have to be positioned differently than second (or top) tier menu items because */
+/* they drop to the side, not below, their parent menu item. This is done by setting the last margin */
+/* value (which is equal to margin-left) to a value that is slightly smaller than the WIDTH of the */
+/* menu item. So, if you modify the rule above, then you should modify this (below) rule, too. */
+.PrettyMenu .AspNet-Menu-Horizontal ul.AspNet-Menu li ul li ul
+{
+    margin: -1.4em 0 0 12.35em;
+}
+
+/* This style sheet is intended to contain RARELY CHANGED rules used when the Menu control adapter is enabled. */
+/* These rules correspond to the "pure CSS menu" technique that have been evolving over the past several years. */
+/* See WhitePaper.aspx for details. */
+
+/* --------------------------------------------------------------------------------------------------- */
+/* Used when the Menu adapter is NOT used. */
+/* These styles are used by the Menu's skin, found in this theme's skin file. */
+
+.Menu-Skin-Horizontal
+{
+    position: absolute;
+    left: 10px;
+    top: 75px;
+    width: 100%;
+    z-index: 300;
+}
+
+.Menu-Skin-StaticItem
+{
+    background: #7795BD url(bg_nav.gif) repeat-x;
+    font-size: small;
+}
+
+.Menu-Skin-DynamicHover
+{
+    background: #7795BD;
+}
+
+/* Other menu */
+
+ul.AspNet-Menu
+{
+    position: relative;
+}
+
+
+ul.AspNet-Menu, ul.AspNet-Menu ul
+{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+ul.AspNet-Menu li
+{
+    position: relative;
+    list-style: none;
+    float: left;
+}
+
+ul.AspNet-Menu li a, ul.AspNet-Menu li span
+{
+    display: block;
+    text-decoration: none;
+}
+
+ul.AspNet-Menu ul
+{
+    position: absolute;
+    visibility: hidden;
+}
+
+/* Add more rules here if your menus have more than three (3) tiers */
+ul.AspNet-Menu li:hover ul ul, ul.AspNet-Menu li.AspNet-Menu-Hover ul ul
+{
+    visibility: hidden;
+}
+
+/* Add more rules here if your menus have more than three (3) tiers */
+ul.AspNet-Menu li:hover ul, ul.AspNet-Menu li li:hover ul, ul.AspNet-Menu li li li:hover ul, ul.AspNet-Menu li.AspNet-Menu-Hover ul, ul.AspNet-Menu li li.AspNet-Menu-Hover ul, ul.AspNet-Menu li li li.AspNet-Menu-Hover ul
+{
+    visibility: visible;
+}
+
+.AspNet-Menu-Vertical ul.AspNet-Menu li
+{
+    width: 100%;
+}
+
+a[icon^="Normal"]
+{
+    background: transparent url(clear.gif) no-repeat left;
+    text-align: center;
+}
+
+a[icon^="Merged"]
+{
+    background: transparent url(paperclip.gif) no-repeat left;
+    text-align: center;
+}
+
+
+a[icon^="DocFull"]
+{
+    background: transparent url(docfull.gif) no-repeat left;
+    text-align: center;
+    padding: 3px 0px 3px 20px;
+}
+
+a[icon^="DocEmpty"]
+{
+    background: transparent url(docempty.gif) no-repeat left;
+    text-align: center;
+    padding: 3px 0px 3px 20px;
+}
+
+div.TypeableLookup
+{
+    margin-bottom: 1px;
+    border-color: #7F9DB9;
+    border-style: solid;
+    border-width: 1px;
+    background-color: white;
+}
+
+
+.WebPartSmall
+{
+    height: 150px;
+}
+
+.WebPartMedium
+{
+    height: 250px;
+}
+
+.WebPartLarge
+{
+    height: 350px;
+}
+
+
+.WebPartFooter
+{
+    height: 25px;
+}
+
+
+.content
+{
+    font-size: smaller;
+}
+
+.contentLink
+{
+    font-size: 8pt;
+}
+
+.contentDtlLink
+{
+    font-size: 6pt;
+    font-style: italic;
+}
+

@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="IHF.ApplicationLayer.Web.Resources.Lookups" CodeBehind="Lookups.svc.cs" %>

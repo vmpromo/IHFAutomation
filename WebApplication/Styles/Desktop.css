@@ -1,0 +1,204 @@
+﻿body 
+{
+	background-color:#DDD1C5;
+	font-size: large;
+}
+
+.page
+{
+    max-width:980px;
+	width:100%;
+    margin:5px auto 5px auto;
+    background-color:White;
+    font-family:Verdana;
+    padding:0px 0px 0px 0px;
+}
+
+.header
+{
+	background-color:Black;
+	color:White;
+}
+
+.header table
+{
+	padding: 0px 2px 0px 2px;
+	border-spacing:0px;
+	border:0px;
+}
+
+.header table tr
+{
+	vertical-align:top;
+}
+
+.header img
+{
+	border:0px none Black;
+	color:White;
+	width:382px;
+	height:40px;
+}
+
+.title
+{
+	width:70%;
+	text-align:center;
+	vertical-align: middle;
+	font-size:large;
+	font-weight:bold;
+	font-variant:small-caps;
+}
+
+.datetime
+{
+	width:15%;
+}
+
+.datetime td
+{
+	text-align:right;
+	font-size:small;
+}
+
+.subheader
+{
+	background-color:#AAAABB;
+	color:Black;
+	font-size:small;
+}
+
+.subheader table
+{
+	width:100%;
+	padding:0px 2px 0px 2px; 
+	border-spacing:0px;
+	border:1px solid Black;
+}
+
+.loginuser
+{
+	font-weight:bold;
+	width:75%;
+}
+
+.logout
+{
+	width:25%;
+	text-align:right;
+}
+
+.error
+{
+	color:Red;
+	background-color:#FFFFD4;
+	font-size:0.7em;
+	padding-left:2px;
+}
+
+.maintab
+{
+	width:100%; 
+	border-spacing:0px;
+}
+
+.nav
+{
+	vertical-align:top;
+	background-color:Black;
+	padding-left:2px;
+}
+
+.nav ul
+{
+	/*border:1px solid White;*/
+}
+
+.nav li
+{
+	padding-right:30px;
+	/*border:1px solid White;*/
+}
+
+.childpage
+{
+	background-color:#FFFFFF;
+	font-size:0.68em;
+	padding-left:2px;
+	padding-right:2px;
+	
+}
+
+.childdefault
+{
+	height:450px;
+}
+
+.footer
+{
+	text-align:center;
+	font-size:xx-small;
+	color:White;
+	background-color:Black;
+}
+
+.childdefault table
+{
+	width:100%;
+}
+
+.childheader
+{
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:5px;
+	font-variant:small-caps;
+	font-weight:bold;
+	background-color:#E6E6E6;
+}
+.rgCaption 
+   {    
+      color:Black; 
+      background-color:#DDD1C5; 
+      font:bold 20pt Arial Narrow; 
+   } 
+   
+   .AutocompleteCompletionListElement
+{
+ 
+    visibility: hidden;
+    margin: 0px !important;
+    background-color: white;
+    color: windowtext;
+    border: buttonshadow;
+    border-width: 1px;
+    border-style: solid;
+    cursor: 'default';
+    overflow: auto;
+    height: 150px;
+    text-align: left;
+    padding-left: 0px;
+    list-style-type: none;
+    z-index: 300;
+    font-size:large
+    
+
+}
+
+
+.AutocompleteHighlightedListItem
+{
+    background-color: #ffff99 ; 	
+    color: Red; 	
+    padding: 10px;
+
+}
+
+.AutocompleteListItem
+{
+    background-color: window;
+    color: windowtext;
+    padding: 1px;
+
+    
+}

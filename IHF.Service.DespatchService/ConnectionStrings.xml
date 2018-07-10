@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<connectionStrings>
+  <add 
+    name = "Ora" 
+    connectionString = "Data Source = omsdev; User Id = itir; Password = itir;" 
+    providerName = "Oracle.DataAccess.Client" /> 
+</connectionStrings>

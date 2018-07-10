@@ -1,0 +1,32 @@
+﻿.level1
+{
+    color: White;
+    background-color: Black;
+    font-variant: small-caps;
+    font-size:small;
+    font-weight: bold;
+}
+
+.level2
+{
+    color: White;
+    font-family: verdana;
+    font-size:small;
+    background-color: Black;
+}
+
+.level3
+{
+    color: White;
+    background-color: Black;
+    font-family: verdana;
+    font-size: small;
+}
+
+.level4
+{
+    background-color: Black;
+    color: White;
+    font-size: small;
+    font-family:Verdana;
+}   

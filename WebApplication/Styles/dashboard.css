@@ -1,0 +1,70 @@
+﻿.InfoBlock
+{
+    border: 1px solid #DFDFDF;
+}
+
+.InfoBlockTitle
+{
+    height: 25px;
+    text-align: center;
+    font-size: large;
+    background: url(images/t.gif) #c5c5c5 repeat-x 0px -7551px;
+}
+
+div #criteriafields
+{
+    height: 25px;
+    margin: 25px 10px 10px;
+}
+
+
+#tblDataList tr td
+{
+    border: 1px solid #EEEEEE;
+}
+
+table #headerRow
+{
+    background-color: #DADADA;
+    font-weight: bold;
+}
+
+table #alternativeItemRow
+{
+    background-color: #F2F2F2;
+}
+
+table #rooterRow
+{
+    font-weight: bold;
+    background-color: #DADADA;
+}
+
+.dLastRefreshStatusBar
+{
+    float: right;
+    font-style: italic;
+    font-size: smaller;
+}
+
+.refreshAction
+{
+    float: right;
+}
+
+.pages
+{
+    float: left;
+}
+
+a
+{
+    text-decoration: none;
+ 
+}
+
+.lnkErrorType:hover
+{
+    text-decoration: none;
+    cursor: pointer;
+}

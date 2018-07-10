@@ -1,0 +1,525 @@
+﻿.packingLayout
+{
+    /* font-size: .80em;     font-family: "Helvetica Neue" , "Lucida Grande" , "Segoe UI" , Arial, Helvetica, Verdana, sans-serif; */
+    margin: 0px;
+    padding: 0px;
+    color: #696969;
+    margin: 10px 10px 10px 10px;
+}
+
+div #msgboard
+{
+    height: 80px;
+}
+
+div #orderUpdate
+{
+    height: 80px;
+}
+
+div #imgWait
+{
+    /*display:none;*/
+    position: relative;
+    top: -25px;
+    left: 140px;
+}
+
+div #scancodeinput
+{
+    margin-left: 5px;
+    border: solid 1px #000000;
+    background-color: #E7EDF7;
+    height: 30px;
+    width: 400px;
+    font-size: medium;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.flowbox
+{
+    height: 50px;
+    width: 100px;
+    border: solid 1px #000000;
+    background-color: #E7EDF7;
+    float: left;
+    top: 1px;
+    color: Black;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    margin: 3px;
+}
+
+.transportMode
+{
+    height: 50px;
+    width: 100px;
+    float: left;
+    top: 1px;
+    color: Black;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    margin: 3px;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.flowboxH
+{
+    height: 50px;
+    width: 100px;
+    border: solid 1px green;
+    background-color: green;
+    float: left;
+    top: 1px;
+    color: White;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    margin: 3px;
+}
+
+div #packflow
+{
+    width: 550px;
+    margin-left: 0px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+div #MIS
+{
+    position: relative;
+    float: left;
+    left: 40px;
+}
+div #SIS
+{
+    position: relative;
+    float: right;
+    right: 260px;
+}
+
+div #DOM
+{
+	display:none;
+}
+
+div #INT
+{
+	display:none;
+}
+
+div #TransportMode
+{
+    position: relative;
+    float: right;
+    right: 5px;
+}
+
+
+div #activeMap
+{
+    margin-top: 80px;
+}
+
+div #currentProcessLEds
+{
+    float: right;
+}
+
+
+
+.oSearch
+{
+    margin-left: 10px;
+    border: solid 1px #000000;
+    background-color: #E7EDF7;
+    height: 25px;
+    width: 300px;
+    font-size: medium;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+#actionCtrls
+{
+    border: solid 0px red;
+    height: 10px;
+}
+
+.actionBox
+{
+    height: 30px;
+    width: 90px;
+    border: solid 1px #6593CF;
+    background-color: #E7EDF7;
+    float: left;
+    top: 1px;
+    color: Black;
+    text-align: center;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+.inprocess
+{
+    background-color: #00BA06;
+}
+
+
+.current
+{
+    background-color: Green;
+}
+.onorder
+{
+    background-color: blue;
+}
+
+.packed
+{
+    background-color: #4B6C9E;
+}
+
+.empty
+{
+    background-color: Gray;
+}
+
+.NaLocation
+{
+    background-image: url(images/na.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#actions
+{
+    color: #000000;
+    font-weight: bold;
+    padding: 15px 15px 15px 20px;
+    background-color: #000000;
+    border: solid 1px #000000;
+}
+
+
+div .actionButton
+{
+    background-color: #E7EFF7;
+    border: 1px #000000 solid;
+    color: #000000;
+    display: block;
+    line-height: 30px;
+    text-decoration: none;
+    white-space: nowrap;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+div .actionButton:hover
+{
+    background-color: #F78621;
+    border: 1px #F78621 solid;
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div .actionButton :active
+{
+    background-color: #465c71;
+    color: #000000;
+    text-decoration: none;
+}
+
+div .actionButton span
+{
+    /*color: #dde4ec;*/
+}
+
+div .actionButton2
+{
+    background-color: #000000;
+    border: 1px #000000 solid;
+    color: #ffffff;
+    display: block;
+    line-height: 30px;
+    text-decoration: none;
+    white-space: nowrap;
+    width: 110px;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+div .actionButton2:hover
+{
+    background-color: #F78621;
+    border: 1px #F78621 solid;
+    color: #465c71;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div .actionButton2 :active
+{
+    background-color: #7B7D7B;
+    color: #cfdbe6;
+    text-decoration: none;
+}
+
+div .actionButton2 span
+{
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+div #ReasonCode
+{
+    background-color: #bfcbd6;
+    color: #000000;
+    text-decoration: none;
+    width: 145px;
+    height: 40px;
+    margin: 30px 0px 0px 0px;
+}
+
+#SelectReasonCode
+{
+    width: 140px;
+    background-color: #bfcbd6;
+    margin-left: 2px;
+}
+
+.cellcontainer
+{
+    height: 50px;
+    width: 100%;
+}
+.cellonorder
+{
+    background-color: Blue !important;
+    color: White;
+}
+
+.cellcurrent
+{
+    background-color: Green !important;
+    color: White;
+}
+
+.cellpacked
+{
+    background-color: #4B6C9E !important;
+}
+
+.cellempty
+{
+    background-color: Gray !important;
+}
+
+.inprocess
+{
+    background-color: #00BA06 !important;
+}
+.excessItemImg
+{
+    background-image: url(../images/excessitems.png);
+    height: 40px;
+    width: 45px;
+    float: right;
+    margin-right: 10px;
+}
+
+.excessItemNoImg
+{
+    background: transparent;
+    height: 40px;
+    width: 45px;
+    float: right;
+    margin-right: 10px;
+}
+
+.orderpackcount
+{
+    /*border:solid 1px red;*/
+    font-weight: bold;
+    font-size: medium;
+    margin-left: 4px;
+}
+.cellloc
+{
+    position: relative;
+    border: solid 1px red;
+    left: 10px;
+    top: -45px;
+}
+
+#InforBoard
+{
+    margin: 30px 0 30px 0;
+    width: 600px;
+    height: 200px;
+    padding: 10px 10px 10px 10px;
+}
+
+.tblInforBoard
+{
+    background-color: #E7EDF7;
+    width: 600px;
+    height: 200px;
+    font-weight: bold;
+    border: solid 1px #000000;
+    border-collapse: collapse;
+}
+
+.infoLabel
+{
+    color: #000000;
+    text-decoration: underline;
+}
+.infovalue
+{
+    font-weight: bolder;
+    font-size: medium;
+    color: #000000;
+}
+
+.infovalueBig
+{
+    font-weight: bolder;
+    font-size: large;
+    color: #000000;
+}
+
+.tblInforBoard tr td
+{
+    padding: 5px 5px 5px 5px;
+}
+
+.msgBoard
+{
+    width: 400px !important;
+    height: 50px;
+}
+
+#tv
+{
+    font-family: "Lucida Sans Unicode" , "Lucida Grande" , Sans-Serif;
+    font-size: 11px;
+    margin: 1px 1px 1px 1px;
+    width: 395px;
+    text-align: left;   
+    border-collapse: collapse;
+}
+#tv th
+{
+    font-size: 13px;
+    font-weight: bold;
+    /*padding: 8px;*/ /*background: #d0dafd;*/ /*border-top: 4px solid #aabcfe;*/
+    border-bottom: 2px solid #70A8D2;
+    color: #000;
+}
+#tv td
+{
+    padding: 5px 0px 5px 0px;
+    background: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    border-bottom: 1px solid #d0dafd;
+    color: #000;
+    border-top: 1px solid transparent;
+}
+#tv tr:hover td
+{
+    background: #d0dafd;
+    color: #000;
+}
+
+
+.icCOMPLETE
+{
+   
+    background: green;
+    margin:0px 4px 0px 2px;
+    height:20px;
+    width:20px;
+    float: right;
+   
+}
+
+.icNOTCOMPLETE
+{
+    background: #FFC000;
+    margin:0px 4px 0px 2px;
+    height:20px;
+    width:20px;
+    float: right;
+}
+
+#options
+{
+	background-color:#000000;
+	color: #FFFFFF;
+	font-weight: Bold;
+    padding: 15px 15px 15px 20px;
+	
+}
+
+.list
+{
+	width:100%;
+	border-spacing:0px;
+	/*border:1px solid Black;*/
+}
+
+.list THEAD
+{
+	background-color: #bbb;
+	color:#444;
+	font-weight:bold;
+	font-size:large;
+}
+
+.list THEAD TH
+{
+	text-align:left;
+}
+
+.list TBODY TR:hover
+{
+	background-color: #68c !important;
+	color:White;
+}
+
+.list TBODY TD
+{
+	font-size:large;
+}
+
+.packList
+{
+	
+	float:left;
+	margin-left:250px;
+	margin-top:10px;
+	
+	
+}
+
+.packList SELECT
+{
+	width:200px;
+}
+.areaList
+{
+   
+   margin-left:510px;
+   margin-top:10px;
+}

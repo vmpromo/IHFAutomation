@@ -1,0 +1,143 @@
+﻿body 
+{
+	background-color:#DDD1C5;
+	margin: 5px auto 5px auto;
+}
+
+.page
+{
+    width:300px;
+    margin:0px auto 0px auto;
+    background-color:#EFEBEF;
+    border:1px solid Black;
+    font-family:Verdana;
+}
+
+.header
+{
+	background-color:Black;
+	width:100%;
+	color:White;
+	font-size:0.7em;
+	font-variant:small-caps;
+	font-weight:bold;
+}
+
+.header table
+{
+	width:100%;
+}
+
+.subheader
+{
+	font-size:0.6em;
+	color:White; 
+	background-color:Black;
+}
+
+.subheader table
+{
+	border-spacing:0px;
+	padding-left:2px;	
+}
+
+.menu
+{
+	width:100%;
+	font-size:0.8em;
+	color:#0000FF;
+	background-color:#EFEBEF;
+	font-weight:bold;
+}
+
+.menu table
+{
+	width:100%; 
+	border-spacing:"0px"; 
+	border-width:1px;
+	border-collapse:collapse; 
+	border-style:solid;
+	border-color:Black;
+}
+
+.menu td
+{
+	padding-left:3px;
+	border-width:0px;
+	border-color:Black;
+}
+
+.message
+{
+	height:50px; 
+	font-size:1em;
+	color:White; 
+	background-color:#007FFF;
+	border:1px solid Black;
+	padding-left:2px;
+	word-wrap:break-word;
+	font-weight:bold;
+}
+
+.input
+{
+	padding-left:1px 1px 1px 1px;
+}
+
+.DialogBox
+{
+	position:absolute;
+	top:60px;
+	left:30px;
+	display:none;
+	width:250px;
+	border:1px solid Black;
+	background-color:#EFEBEF;
+}
+
+.DialogBoxHeader 
+{
+	background-color:Black;
+	color:White;
+	background-repeat:no-repeat;
+	border:solid 2px Black; 
+	font-size:0.7em; 
+	font-weight:bold;
+}
+
+div.PopupMessage
+{
+	height:75px;
+	font-size:1em;
+	text-align:left;
+	padding:2px;
+	word-wrap:break-word;
+	font-weight:bold;
+}
+
+.DialogFooter
+{
+	text-align:center;
+	background-color:#B4B4B4;
+	border-top:1px solid Black;
+}
+
+.CloseButton
+{
+	width:40px;
+}
+
+.ChildPage
+{
+	background-color:#EFEBEF;
+	height:50px;
+}
+
+.footer
+{
+	background-color:#000000;
+	color:#FFFFFF;
+	font-size:xx-small;
+	text-align:center;
+}
+	

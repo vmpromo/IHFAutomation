@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="IHF.ApplicationLayer.Web.Pages.Packing.DataLoaders.DataLoader" CodeBehind="DataLoader.svc.cs" %>

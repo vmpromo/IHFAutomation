@@ -1,0 +1,29 @@
+﻿.item_azure 
+{
+    background-color:Azure;
+}
+
+.item_beige 
+{
+    background-color:Beige;
+}
+
+.item_chocolate
+{
+    background-color:Chocolate;
+}
+
+.item_yellow
+{
+    background-color:Yellow;
+}
+
+.item_bisque 
+{
+    background-color:Bisque;
+}
+
+.hidden 
+{
+    display: none;
+}

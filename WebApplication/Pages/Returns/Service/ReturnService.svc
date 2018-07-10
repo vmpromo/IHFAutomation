@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="IHF.ApplicationLayer.Web.Pages.Returns.Service.ReturnService" CodeBehind="ReturnService.svc.cs" %>
